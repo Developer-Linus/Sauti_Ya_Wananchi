@@ -27,7 +27,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
 bash
-git clone https://github.com/yourusername/sauti-ya-wananchi.git
+git clone [Sauti_YA_Wananchi](https://github.com/Developer-Linus/Sauti_Ya_Wananchi/)
 cd sauti-ya-wananchi
 
 
