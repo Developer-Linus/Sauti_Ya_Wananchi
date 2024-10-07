@@ -1,5 +1,7 @@
 # Sauti ya Wananchi - Citizen Engagement Platform
 
+I have two branches: frontend branch is for my application frontend and backend branch is for the backend logic of my site.
+
 ## Project Overview
 "Sauti ya Wananchi" (Voice of the Citizens) is a web-based citizen engagement platform designed to empower Kenyan citizens to actively participate in governance. The platform allows users to create and sign petitions, participate in polls, and engage in community discussions, fostering a more inclusive democratic process.
 
@@ -27,7 +29,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
 bash
-git clone https://github.com/yourusername/sauti-ya-wananchi.git
+git clone [Sauti_YA_Wananchi](https://github.com/Developer-Linus/Sauti_Ya_Wananchi/)
 cd sauti-ya-wananchi
 
 
