@@ -2,7 +2,7 @@
 
 The link to the frontend of the project is 
 ```
-https://sauti-ya-wananchi-4qrs.vercel.app/
+https://vercel.com/linus-langats-projects/sauti-ya-wananchi-4qrs/2p3Txy3AnSPj7vxyYfZka2stvCYJ
 ```
 
 ## Project Overview
