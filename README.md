@@ -2,7 +2,6 @@
 
 The link to the frontend of the project is 
 ```
-bash
 https://sauti-ya-wananchi-4qrs.vercel.app/
 ```
 
