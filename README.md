@@ -33,14 +33,13 @@ cd sauti-ya-wananchi
 
 
 2. **Install dependencies**:
-   - For the frontend:
-     ```
+- For the frontend:
 ```bash
 cd frontend
 npm install
 ```
 
-   - For the backend:
+- For the backend:
 ```bash
 cd backend
 npm install
