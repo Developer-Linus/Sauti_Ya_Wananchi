@@ -1,7 +1,5 @@
 # Sauti ya Wananchi - Citizen Engagement Platform
 
-I have two branches: frontend branch is for my application frontend and backend branch is for the backend logic of my site.
-
 ## Project Overview
 "Sauti ya Wananchi" (Voice of the Citizens) is a web-based citizen engagement platform designed to empower Kenyan citizens to actively participate in governance. The platform allows users to create and sign petitions, participate in polls, and engage in community discussions, fostering a more inclusive democratic process.
 
