@@ -28,41 +28,41 @@ I have two branches: frontend branch is for my application frontend and backend 
 To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
-bash
-git clone [Sauti_YA_Wananchi](https://github.com/Developer-Linus/Sauti_Ya_Wananchi/)
+```bash
+git clone https://github.com/Developer-Linus/Sauti_Ya_Wananchi/
 cd sauti-ya-wananchi
+```
 
 
 2. **Install dependencies**:
    - For the frontend:
      ```
-bash
+```bash
 cd frontend
 npm install
+```
 
    - For the backend:
-     ```
-bash
+```bash
 cd backend
 npm install
-
+```
 
 3. **Set up the database**:
    - Ensure you have MongoDB installed and running.
 
 4. **Run the application**:
    - Start the backend server:
-     ```
-bash
+```bash
 cd backend
 npm start
-
+```
    - Start the frontend application:
-     ```
+```
 bash
 cd frontend
 npm start
-
+```
 
 ## Usage
 Once the application is running, you can access it in your web browser at `http://localhost:5000`. From there, you can register, log in, create petitions, vote in polls, and participate in community discussions.
