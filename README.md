@@ -1,5 +1,11 @@
 # Sauti ya Wananchi - Citizen Engagement Platform
 
+The link to the frontend of the project is 
+```
+bash
+https://sauti-ya-wananchi-4qrs.vercel.app/
+```
+
 ## Project Overview
 "Sauti ya Wananchi" (Voice of the Citizens) is a web-based citizen engagement platform designed to empower Kenyan citizens to actively participate in governance. The platform allows users to create and sign petitions, participate in polls, and engage in community discussions, fostering a more inclusive democratic process.
 
