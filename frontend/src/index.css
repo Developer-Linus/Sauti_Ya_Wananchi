@@ -1,0 +1,995 @@
+/* General Styles */
+/* Basic styling for the body to set font, background, and spacing */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #A8D5BA, #F9C2C2, #F5F5DC); /* Light green to light red to beige */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Dark gray text for contrast */
+}
+
+/* Header Styles */
+/* Styling for the header section, including navigation */
+header {
+  background-color: #006600; /* Dark green background */
+  color: white; /* White text for contrast */
+  padding: 20px; /* Space around the content */
+  border-bottom: 3px solid #FFD700; /* Gold border for emphasis */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+.nav-container {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center items vertically */
+}
+
+.nav-logo {
+  font-size: 2.5rem; /* Large font for logo */
+  font-weight: 550; /* Bold text */
+  letter-spacing: 2px; /* Spacing between letters */
+  color: white; /* White text */
+  text-transform: uppercase; /* Uppercase text */
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 20px; /* Space between links */
+}
+
+.nav-link {
+  color: white; /* White text */
+  text-transform: uppercase; /* Uppercase text */
+  font-size: 1.2rem; /* Medium font size */
+  transition: color 0.3s ease; /* Smooth color transition */
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+.hamburger{
+  display: none;
+}
+.close-button{
+  display: none;
+}
+
+/* Auth Component Styling */
+.auth-container {
+  max-width: 400px; /* Limit width for the form */
+  margin: 40px auto; /* Center the form */
+  padding: 20px; /* Padding for content */
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.auth-container h1 {
+  font-size: 2rem; /* Title font size */
+  text-align: center; /* Center text */
+  color: #BE0027; /* Kenya Red */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.auth-container form {
+  display: flex; /* Flexbox for form layout */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.auth-container label {
+  margin-bottom: 5px; /* Space below label */
+  font-weight: bold; /* Bold labels */
+}
+
+.auth-container input {
+  padding: 10px; /* Padding for input fields */
+  margin-bottom: 15px; /* Space below input fields */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Font size for input */
+}
+
+.auth-container button {
+  padding: 10px; /* Padding for buttons */
+  background-color: #BE0027; /* Kenya Red */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.auth-container button:hover {
+  background-color: #9e001f; /* Darker red on hover */
+}
+
+.auth-container .message {
+  margin-top: 15px; /* Space above message */
+  text-align: center; /* Center message */
+  color: #333; /* Dark gray text */
+}
+
+.auth-container .switch-button {
+  margin-top: 10px; /* Space above switch button */
+  text-align: center; /* Center text */
+  color: #337ab7; /* Blue text */
+  cursor: pointer; /* Pointer cursor */
+  text-decoration: underline; /* Underline text */
+}
+
+.welcome-section h2 {
+  font-size: 3rem; /* Large font for headings */
+  text-align: center; /* Center text */
+  color: #BE0027; /* Kenya Red */
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 20px; /* Space below heading */
+}
+.home-container{
+  margin: 8px 12px;
+}
+
+.home-container p {
+  text-align: center; /* Center text */
+  font-size: 1.5rem; /* Medium font size */
+  color: #333; /* Dark gray text */
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto; /* Center block */
+}
+
+/* Key Issues Section */
+/* Grid layout for key issues */
+.key-issues {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 30px; /* Space between items */
+  margin-top: 40px; /* Space above section */
+}
+
+.key-issue {
+  background-color: white; /* White background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding for content */
+  text-align: center; /* Center text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.key-issue:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.key-issue h3 {
+  font-size: 1.8rem; /* Medium font size */
+  color: #006600; /* Kenya Green */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+.key-issue p {
+  color: #666; /* Gray text */
+  font-size: 1.2rem; /* Medium font size */
+}
+
+.key-issue button {
+  background-color: #BE0027; /* Kenya Red */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for button */
+  border: none; /* Remove border */
+  border-radius: 25px; /* Rounded button */
+  font-size: 1.2rem; /* Medium font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.key-issue button:hover {
+  background-color: #FF3355; /* Lighter red on hover */
+}
+
+/* Get Involved Section */
+/* Flexbox layout for involvement options */
+.get-involved {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center items */
+  margin-top: 40px; /* Space above section */
+  gap: 30px; /* Space between items */
+}
+
+.get-involved a {
+  background-color: #FFD700; /* Gold background */
+  opacity: 65%;
+  color: black; /* Black text */
+  padding: 20px; /* Padding for content */
+  text-align: center; /* Center text */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  width: 100%; /* Full width */
+  max-width: 300px; /* Limit width */
+}
+
+.get-involved a:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.get-involved a p {
+  font-size: 1.5rem; /* Medium font size */
+  color: black; /* Black text */
+}
+
+.get-involved h3 {
+  font-size: 1.8rem; /* Medium font size */
+  color: #006600; /* Kenya Green */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+.get-involved .icon {
+  font-size: 3rem; /* Large icon size */
+  margin-bottom: 10px; /* Space below icon */
+}
+
+.icon {
+  margin-right: 8px; /* Space to the right of icon */
+}
+
+/* Bottom Icons */
+/* Flexbox layout for bottom icons */
+.bottom-icons {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out items */
+  margin-top: 20px; /* Space above section */
+}
+
+.scroll-button, .accessibility-icon {
+  margin-right: 10px; /* Space to the right */
+  background-color: #FFD700; /* Gold background */
+  color: black; /* Black text */
+  border-radius: 50%; /* Circular shape */
+  padding: 15px; /* Padding for content */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-block; /* Inline block for layout */
+  margin-top: 20px; /* Space above */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.scroll-button:hover {
+  background-color: #FFCC00; /* Lighter gold on hover */
+}
+
+/* Footer Styling */
+/* Styling for the footer section */
+.footer {
+  background-color: #006600; /* Dark green background */
+  color: white; /* White text */
+  padding: 40px 20px; /* Padding for content */
+}
+
+.footer-container {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space out items */
+  align-items: flex-start; /* Align items to the top */
+  max-width: 1200px; /* Limit width */
+  margin: 0 auto; /* Center block */
+  flex-wrap: wrap; /* Wrap items on small screens */
+}
+
+/* Footer Columns */
+/* Layout for footer columns */
+.footer-column {
+  flex: 1; /* Flexible width */
+  min-width: 250px; /* Minimum width */
+  margin-bottom: 20px; /* Space below column */
+}
+
+/* Footer Titles */
+/* Styling for footer titles */
+.footer-title {
+  font-size: 1.5rem; /* Medium font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 10px; /* Space below title */
+  color: #FFD700; /* Gold text */
+}
+
+/* Links Styling */
+/* Styling for footer links */
+.footer-link {
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-link:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+
+/* Footer Love for Kenya */
+/* Styling for special footer text */
+.footer-love {
+  font-style: italic; /* Italic text */
+  margin-bottom: 10px; /* Space below text */
+}
+
+/* Copyright */
+/* Styling for copyright text */
+.footer-copyright {
+  font-size: 0.875rem; /* Small font size */
+  color: #F0F0F0; /* Light gray text */
+}
+
+/* Footer Navigation */
+/* Layout for footer navigation */
+.footer-nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px; /* Space below list item */
+}
+
+/* About Section Styling */
+/* Styling for the about section */
+.about-container {
+  max-width: 800px; /* Limit width */
+  margin: 0 auto; /* Center block */
+  padding: 40px 20px; /* Padding for content */
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-title {
+  text-align: center; /* Center text */
+  font-size: 2.5rem; /* Large font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 20px; /* Space below title */
+  color: #006600; /* Kenya Green */
+}
+
+.about-section-title {
+  font-size: 2rem; /* Medium font size */
+  font-weight: bold; /* Bold text */
+  margin-top: 30px; /* Space above title */
+  color: #006600; /* Kenya Green */
+}
+
+.about-description {
+  font-size: 1.125rem; /* Medium font size */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 20px; /* Space below text */
+}
+
+.about-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.about-list li {
+  margin-bottom: 15px; /* Space below list item */
+  font-size: 1.125rem; /* Medium font size */
+}
+
+/* Contact Section Styling */
+/* Styling for the contact section */
+.contact-container {
+  max-width: 800px; /* Limit width */
+  margin: 0 auto; /* Center block */
+  padding: 20px; /* Padding for content */
+  color: #4a4a4a; /* Dark gray text */
+}
+
+.contact-title {
+  font-size: 2.5em; /* Large font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 20px; /* Space below title */
+  text-align: center; /* Center text */
+}
+
+.contact-description {
+  margin-bottom: 30px; /* Space below description */
+  text-align: center; /* Center text */
+}
+
+.contact-subtitle {
+  font-size: 2em; /* Medium font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 10px; /* Space below subtitle */
+  text-align: center; /* Center text */
+}
+
+.contact-heading {
+  font-size: 1.5em; /* Medium font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center text */
+}
+
+.contact-text {
+  margin-bottom: 20px; /* Space below text */
+  text-align: center; /* Center text */
+}
+
+.contact-link {
+  color: #1e90ff; /* Blue text */
+  text-decoration: none; /* Remove underline */
+}
+
+.contact-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.contact-phone {
+  font-weight: bold; /* Bold text */
+}
+
+.social-media {
+  margin-bottom: 30px; /* Space below section */
+  text-align: center; /* Center text */
+}
+
+.social-media-list {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center items */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin-top: 10px; /* Space above list */
+}
+
+.social-media-link {
+  margin: 0 15px; /* Space between links */
+  color: inherit; /* Inherit text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.social-media-link:hover {
+  color: #000; /* Black color on hover */
+}
+
+.facebook {
+  color: #3b5998; /* Facebook blue */
+}
+
+.twitter {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.instagram {
+  color: #e1306c; /* Instagram pink */
+}
+
+/* Forums Styling */
+/* Styling for the forums section */
+.forums-container {
+  max-width: 800px; /* Limit width */
+  margin: 40px auto; /* Center block with margin */
+  padding: 20px; /* Padding for content */
+  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #ddd; /* Light border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.forums-title {
+  font-size: 2.5rem; /* Large font size */
+  text-align: center; /* Center text */
+  color: #BE0027; /* Kenya Red */
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.forum {
+  margin-bottom: 20px; /* Space below forum */
+  padding-bottom: 20px; /* Padding below content */
+  border-bottom: 1px solid #ccc; /* Light border */
+}
+
+.forum-title {
+  font-size: 1.8rem; /* Medium font size */
+  color: #006600; /* Kenya Green */
+  margin-bottom: 15px; /* Space below title */
+}
+
+.forum-description {
+  color: #666; /* Gray text */
+  font-size: 1.2rem; /* Medium font size */
+  margin-bottom: 10px; /* Space below description */
+}
+
+.forum-posts {
+  font-size: 1.2rem; /* Medium font size */
+  color: #666; /* Gray text */
+  margin-bottom: 10px; /* Space below posts */
+}
+
+.forum-link {
+  display: block; /* Block display for full width */
+  margin-top: 20px; /* Space above link */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  color: #337ab7; /* Blue text */
+  transition: color 0.2s ease; /* Smooth color transition */
+}
+
+.forum-link:hover {
+  color: #23527c; /* Darker blue on hover */
+}
+
+/* Polls Styling */
+/* Styling for the polls section */
+.polls-container {
+  max-width: 800px; /* Limit width */
+  margin: 40px auto; /* Center block with margin */
+  padding: 20px; /* Padding for content */
+  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #ddd; /* Light border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.polls-title {
+  font-size: 2.5rem; /* Large font size */
+  text-align: center; /* Center text */
+  color: #BE0027; /* Kenya Red */
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.poll {
+  margin-bottom: 20px; /* Space below poll */
+  padding-bottom: 20px; /* Padding below content */
+  border-bottom: 1px solid #ccc; /* Light border */
+}
+
+.poll-question {
+  font-size: 1.8rem; /* Medium font size */
+  color: #006600; /* Kenya Green */
+  margin-bottom: 15px; /* Space below question */
+}
+
+.poll-description {
+  color: #666; /* Gray text */
+  font-size: 1.2rem; /* Medium font size */
+}
+
+.poll-options {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.poll-option {
+  margin-bottom: 10px; /* Space below option */
+}
+
+.poll-option input[type="radio"] {
+  margin-right: 10px; /* Space to the right of radio button */
+}
+
+.poll-votes {
+  font-size: 14px; /* Small font size */
+  color: #666; /* Gray text */
+}
+
+.polls-link {
+  display: block; /* Block display for full width */
+  margin-top: 20px; /* Space above link */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  color: #337ab7; /* Blue text */
+  transition: color 0.2s ease; /* Smooth color transition */
+}
+
+.polls-link:hover {
+  color: #23527c; /* Darker blue on hover */
+}
+
+/* Profile Styling */
+/* Styling for the profile section */
+.profiles-container {
+  max-width: 800px; /* Limit width */
+  margin: 40px auto; /* Center block with margin */
+  padding: 20px; /* Padding for content */
+  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #ddd; /* Light border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.profiles-title {
+  font-size: 2.5rem; /* Large font size */
+  text-align: center; /* Center text */
+  color: #BE0027; /* Kenya Red */
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.profile {
+  margin-bottom: 20px; /* Space below each profile */
+  padding: 20px; /* Padding for profile */
+  background-color: #fff; /* White background for profiles */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.user-info, .recent-activities, .settings {
+  margin-bottom: 20px; /* Space below section */
+  padding-bottom: 20px; /* Padding below content */
+  border-bottom: 1px solid #ccc; /* Light border */
+}
+
+.section-title {
+  font-size: 1.8rem; /* Medium font size */
+  color: #006600; /* Kenya Green */
+  margin-bottom: 15px; /* Space below title */
+}
+
+.info-item {
+  margin-bottom: 10px; /* Space below item */
+  color: #666; /* Gray text */
+  font-size: 1.2rem; /* Medium font size */
+}
+
+.info-item strong {
+  color: #337ab7; /* Blue text for emphasis */
+}
+
+.activities-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.activities-list li {
+  margin-bottom: 10px; /* Space below item */
+  color: #666; /* Gray text */
+  font-size: 1.2rem; /* Medium font size */
+}
+
+.settings-button {
+  display: block; /* Block display for full width */
+  margin-top: 20px; /* Space above button */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  color: #337ab7; /* Blue text */
+  transition: color 0.2s ease; /* Smooth color transition */
+  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #ddd; /* Light border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.settings-button:hover {
+  color: #23527c; /* Darker blue on hover */
+  background-color: #f2f2f2; /* Slightly darker background on hover */
+  border-color: #ccc; /* Darker border on hover */
+}
+
+
+/* Petitions Styling */
+/* Styling for the petitions section */
+.petitions-container {
+  max-width: 800px; /* Limit width */
+  margin: 40px auto; /* Center block with margin */
+  padding: 20px; /* Padding for content */
+  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #ddd; /* Light border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.petitions-title {
+  font-size: 2.5rem; /* Large font size */
+  text-align: center; /* Center text */
+  color: #BE0027; /* Kenya Red */
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.petition {
+  margin-bottom: 20px; /* Space below petition */
+  padding-bottom: 20px; /* Padding below content */
+  border-bottom: 1px solid #ccc; /* Light border */
+}
+
+.petition-title {
+  font-size: 1.8rem; /* Medium font size */
+  color: #006600; /* Kenya Green */
+  margin-bottom: 15px; /* Space below title */
+}
+
+/*Responsiveness*/
+
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-links {
+    display: flex; /* Show links in flexbox */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width */
+    background-color: #006600; /* Match header background */
+    padding: 10px 6px; /* Padding for links */
+    margin-top: 10px; /* Space below logo */
+  }
+
+  .nav-link {
+    padding: 10px 20px; /* Add padding for better touch targets */
+    width: 100%; /* Full width for each link */
+  }
+  .get-involved{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  /* Responsive adjustments for polls section */
+  .polls-container {
+      padding: 10px; /* Reduce padding */
+  }
+  .poll {
+      margin-bottom: 15px; /* Reduce margin */
+      padding-bottom: 15px; /* Reduce padding */
+  }
+  .poll-question {
+      font-size: 1.5rem; /* Reduce font size */
+  }
+  .poll-description {
+      font-size: 1rem; /* Reduce font size */
+  }
+  .poll-options {
+      flex-wrap: wrap; /* Wrap options */
+  }
+  .poll-option {
+      margin-bottom: 5px; /* Reduce margin */
+  }
+  .poll-votes {
+      font-size: 12px; /* Reduce font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width */
+    background-color: #006600; /* Match header background */
+    position: absolute; /* Position relative to parent */
+    top: 60px; /* Position below header */
+    left: 0; /* Align to left */
+    padding: 10px 8px; /* Padding for links */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 2rem; /* Large icon size */
+    color: white; /* White color */
+  }
+
+  .close-button {
+    display: block; /* Show close button */
+    text-align: right; /* Align to the right */
+    padding: 10px; /* Padding for spacing */
+    font-size: 1.5rem; /* Medium font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: white; /* White color */
+  }
+.welcome-section h2{
+  font-size: 1.5rem;
+}
+.welcome-section p{
+  text-align: left;
+  font-size: 1rem;
+}
+
+  /* Responsive adjustments for polls section */
+  .polls-container {
+      padding: 5px; /* Further reduce padding */
+  }
+  .poll {
+      margin-bottom: 10px; /* Further reduce margin */
+      padding-bottom: 10px; /* Further reduce padding */
+  }
+  .poll-question {
+      font-size: 1.2rem; /* Further reduce font size */
+  }
+  .poll-description {
+      font-size: 0.9rem; /* Further reduce font size */
+  }
+  .poll-options {
+      flex-direction: column; /* Stack options vertically */
+  }
+  .poll-option {
+      margin-bottom: 2px; /* Further reduce margin */
+  }
+  .poll-votes {
+      font-size: 10px; /* Further reduce font size */
+  }
+}
+
+css
+Copy Code
+/* Profile Styling */
+/* Styling for the profile section */
+.profiles-container {
+  max-width: 800px; /* Limit width for larger screens */
+  margin: 40px auto; /* Center block with margin */
+  padding: 20px; /* Padding for content */
+  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #ddd; /* Light border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.profiles-title {
+  font-size: 2.5rem; /* Large font size */
+  text-align: center; /* Center text */
+  color: #BE0027; /* Kenya Red */
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.profile {
+  margin-bottom: 20px; /* Space below each profile */
+  padding: 20px; /* Padding for profile */
+  background-color: #fff; /* White background for profiles */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.user-info, .recent-activities, .settings {
+  margin-bottom: 20px; /* Space below section */
+  padding-bottom: 20px; /* Padding below content */
+  border-bottom: 1px solid #ccc; /* Light border */
+}
+
+.section-title {
+  font-size: 1.8rem; /* Medium font size */
+  color: #006600; /* Kenya Green */
+  margin-bottom: 15px; /* Space below title */
+}
+
+.info-item {
+  margin-bottom: 10px; /* Space below item */
+  color: #666; /* Gray text */
+  font-size: 1.2rem; /* Medium font size */
+}
+
+.info-item strong {
+  color: #337ab7; /* Blue text for emphasis */
+}
+
+.activities-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.activities-list li {
+  margin-bottom: 10px; /* Space below item */
+  color: #666; /* Gray text */
+  font-size: 1.2rem; /* Medium font size */
+}
+
+.settings-button {
+  display: block; /* Block display for full width */
+  margin-top: 20px; /* Space above button */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  color: #337ab7; /* Blue text */
+  transition: color 0.2s ease; /* Smooth color transition */
+  background-color: #f9f9f9; /* Light gray background */
+  border: 1px solid #ddd; /* Light border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.settings-button:hover {
+  color: #23527c; /* Darker blue on hover */
+  background-color: #f2f2f2; /* Slightly darker background on hover */
+  border-color: #ccc; /* Darker border on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .profiles-container {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .profiles-title {
+    font-size: 2rem; /* Smaller title font size */
+  }
+
+  .section-title {
+    font-size: 1.5rem; /* Smaller section title font size */
+  }
+
+  .info-item {
+    font-size: 1rem; /* Smaller font size for info items */
+  }
+
+  .activities-list li {
+    font-size: 1rem; /* Smaller font size for activities */
+  }
+
+  .settings-button {
+    padding: 8px 16px; /* Smaller padding for buttons */
+  }
+    .profiles-container {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .profiles-title {
+    font-size: 2rem; /* Smaller title font size */
+  }
+
+  .section-title {
+    font-size: 1.5rem; /* Smaller section title font size */
+  }
+
+  .info-item {
+    font-size: 1rem; /* Smaller font size for info items */
+  }
+
+  .activities-list li {
+    font-size: 1rem; /* Smaller font size for activities */
+  }
+
+  .settings-button {
+    padding: 8px 16px; /* Smaller padding for buttons */
+  }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .profiles-container {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .profiles-title {
+    font-size: 1.5rem; /* Even smaller title font size */
+  }
+
+  .section-title {
+    font-size: 1.2rem; /* Smaller section title font size */
+  }
+
+  .info-item {
+    font-size: 0.9rem; /* Smaller font size for info items */
+  }
+
+  .activities-list li {
+    font-size: 0.9rem; /* Smaller font size for activities */
+  }
+
+  .settings-button {
+    padding: 6px 12px; /* Smaller padding for buttons */
+  }
+}
